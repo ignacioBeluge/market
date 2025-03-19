@@ -16,8 +16,7 @@ public class CategoryService {
         return categoryRepository.getCategoryById(categoryId);
     }
     public String createCategory(String entity) {
-        //TODO: process POST request
-        
-        return entity;
+        CategoryRepository categoryRepository = new CategoryRepository();
+        return categoryRepository.createCategory(entity);
     }
 }
